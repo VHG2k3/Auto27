@@ -1,0 +1,69 @@
+1. Đường dẫn: https://accounts.saucelabs.com/am/XUI/#login/
+- element Logo: //img[contains(@class,'logo')]
+- element Sign in: //h3[contains(text(),'Si')]
+- element label User Name: //span[contains(text(),'User')]
+- element Input Username: //input[@id='idToken1']
+- element label Password: //span[contains(text(),'Pass')]
+- element Input Password: //input[@id='idToken2']
+- element checkbox://label[contains(text(), 'Remember ')]
+- element forgot password: //a[contains(text(),'I')]
+- element login: //input[@name='callback_2']
+- element or sign in with: //p[contains(text(),'or sign')]
+- element Google: //a[contains(@title,'Google')]
+- element GitHub: //a[contains(@title,'GitHub')]
+- element SSO: //a[contains(@title,'SSO')]
+- element Not a customer?: //span[contains(text(),'Not')]
+- element Try for free: //span[contains(text(),'Not')]/child::a
+- element banner img: //img[contains(@class,'banner')]
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+
+2. Đường dẫn https://saucelabs.com/request-demo
+- element Logo: //header//img[contains(@src,'logo-black')]
+- các element menu cấp 1:
+    + //header//div[contains(@class,'MuiBox')]//span[text()='Products']
+    + //header//div[contains(@class,'MuiBox')]//span[text()='Solutions']
+    + //header//div[contains(@class,'MuiBox')]//span[text()='Pricing']/parent::a
+    + //header//div[contains(@class,'MuiBox')]//span[text()='Developers']
+    + //header//div[contains(@class,'MuiBox')]//span[text()='Resources']
+- các element menu cấp 2 của menu Products
+    + element Title Platform for Test: //header//div[contains(@class,'dropdown')]//span[text()='Platform for Test']//self::span[contains(@class,'label ')]
+    + element Button Platform for Test: //header//div[contains(@class,'dropdown')]//span[text()='Platform for Test']//self::span[contains(@class,'button')]
+- element button Sign in: //header//button[text()='Sign in']
+- element button Request a demo: //header//button[text()='Request a demo']
+- element button Try it free: //header//button[text()='Try it free']
+- element button Search: //header//button//img[contains(@src,'search')]
+- element Breadcrumb Home ://a[@href='/']//span[text()='Home']
+- element Breadcrumb > ://span[text()='Home']//ancestor::a//following-sibling::div
+- element Breadcrumb > ://span[text()='Home']//ancestor::a/parent::div//following-sibling::div//span[text()='Request a Demo']
+- element h1 Request a Demo: //h1[text()='Request a Demo']
+- element h2 Talk to an Expert: //h2[text()='Talk to an Expert']
+- element p : //p[contains(text(),'We can walk you')]
+- element image video: //img[contains(@src,'Blog_Thumbnail')]
+-element button video: //button[contains(@class,'MuiIconButton-colorDark')]
+- Các element form nhập thông tin:
+   - element Title Book Your Demo Here: //div[@class='mktoFormRow']//span[contains(text(),'Book')]
+   - element Label Business Email: //div[@class='mktoFormRow']//label[contains(text(),'Business')]
+   - element Input Business Email: //div[@class='mktoFormRow']//input[contains(@id,'Email')]
+   - element Label Company: //div[@class='mktoFormRow']//label[contains(text(),'Company')]
+   - element Input Company: //div[@class='mktoFormRow']//input[contains(@id,'Company')]
+   - element Label Select: //div[@class='mktoFormRow']//label[contains(@id,'Interest')]
+   - element Select Interest: //div[@class='mktoFormRow']//select[contains(@id,'Interest')]
+   - element Label Comments: //div[@class='mktoFormRow']//label[contains(@id,'Comments')]
+   - element textarea Comments: //div[@class='mktoFormRow']//textarea[contains(@id,'Comments')]
+   - element Checkbox: //div[@class='mktoFormRow']//input[contains(@name,'sauceLabs')]
+   - element Checkbox Content: //div[@class='mktoFormRow']//label[contains(text(),'Please check this box')]
+   - element Checkbox Content: //div[@class='mktoFormRow']//label[contains(text(),'Please check this box')]
+   - element Button Let's Talk: //div[@class='mktoButtonRow']//button[contains(text(),'Let')]
+- element Title Trusted by: //h2[contains(text(),'Trusted')]
+- element Slide : //div[contains(@class,'swiper-slide')]//img[contains(@alt,'Visa')]
+- Các element Footer:
+  + Logo Footer: //img[contains(@src,'footer-logo')]
+  + Title Product: //h2[contains(text(),'Trusted')]//following::span[contains(text(),'Product')]
+  + Title Global tools: //h2[contains(text(),'Trusted')]//following::span[contains(text(),'Global')]
+  + Link Platform for Test://h2[contains(text(),'Trusted')]//following::span[contains(text(),'Platform for Test')]/parent::a
+  + Img Logo twitter: //img[contains(@src,'footer-twitter')]
+  + Img Logo facebook: //img[contains(@src,'footer-facebook')]
+  + Img Logo linkedin: //img[contains(@src,'footer-linkedin')]
+  + Text © 2025 Sauce Labs Inc....: //span[contains(text(),'2025 Sauce')]
