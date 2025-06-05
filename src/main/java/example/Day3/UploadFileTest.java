@@ -18,5 +18,6 @@ public class UploadFileTest {
         termsCheckBox.click();
         WebElement uploadButton = driver.findElement(By.id("submitbutton"));
         uploadButton.click();
+        //check
     }
 }

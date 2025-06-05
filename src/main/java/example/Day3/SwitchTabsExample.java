@@ -36,6 +36,7 @@ public class SwitchTabsExample {
         Thread.sleep(3000L);
         driver.switchTo().window(originalTab);
         System.out.println("Tab ban đầu: " + driver.getTitle());
+        //check
     }
     }
 
