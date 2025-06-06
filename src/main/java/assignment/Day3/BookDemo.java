@@ -74,6 +74,7 @@ public class BookDemo {
         else{
             System.out.println("Thanh cong");
         }
+        driver.quit();
 
 
     }
