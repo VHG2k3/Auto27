@@ -17,7 +17,7 @@ public class JavascriptExecutorExampleTest {
         // Lay phan tu DropList (interest) bang cach dung Xpath
         WebElement in = driver.findElement(By.name("Solution_Interest__c"));
 
-        //Tao doi tuong JJavascriptExecutor
+        //Tao doi tuong JJavascriptExecutor dung khi khong tuong tac duoc voi Element dc tim thay (Cach cuoi cung)
         JavascriptExecutor js = (JavascriptExecutor) driver;
         //Thuc thi chon gia tri
         js.executeScript("arguments[0].value='Visual Testing';", in);
