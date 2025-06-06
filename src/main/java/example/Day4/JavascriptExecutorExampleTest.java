@@ -19,8 +19,12 @@ public class JavascriptExecutorExampleTest {
 
         //Tao doi tuong JJavascriptExecutor
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        //Thuc thi
+        //Thuc thi chon gia tri
         js.executeScript("arguments[0].value='Visual Testing';", in);
+
+        // Thuc thi click dropdown
+         js.executeScript("arguments[0].click();", in);
+
         Thread.sleep(3000);
 
         System.out.println("Selected value from droplist" + in.getAttribute("value"));
