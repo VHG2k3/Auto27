@@ -203,7 +203,6 @@ public class Checkout {
         }
 
 
-
     }
 
     public static void CheckInfor( ) {
