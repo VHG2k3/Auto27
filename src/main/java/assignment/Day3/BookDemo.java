@@ -26,8 +26,10 @@ public class BookDemo {
 
     public static void Demo(Infor infor) throws InterruptedException {
         driver = new ChromeDriver();
-        driver.get("https://saucelabs.com/request-demo");
         driver.manage().window().maximize();
+
+        driver.get("https://saucelabs.com/request-demo");
+
 
         WebElement email = driver.findElement(By.id("Email"));
         email.sendKeys(infor.email);
