@@ -32,7 +32,7 @@ public class LoginTest {
         Assert.assertEquals(driver.getTitle(), "Swag Labs", "Title mismatch!");
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.saucedemo.com/", "URL mismatch!");
 
-        // Điền thông tin đúng
+        // Điền thông tin đúng.
         driver.findElement(By.id("user-name")).sendKeys("standard_user");
         driver.findElement(By.id("password")).sendKeys("secret_sauce");
         driver.findElement(By.id("login-button")).click();

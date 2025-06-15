@@ -60,7 +60,7 @@ public class LoginMultiCaseV2Test {
             int itemCount = driver.findElements(By.className("inventory_item")).size();
             Assert.assertTrue(itemCount > 0, "No products displayed!");
         } else {
-            // Có lỗi, kiểm tra error message
+            // Có lỗi, kiểm tra error message.
             WebElement errorMsg = driver.findElement(By.cssSelector("[data-test='error']"));
             Assert.assertTrue(errorMsg.isDisplayed(), "Error message not displayed!");
             Assert.assertTrue(errorMsg.getText().contains(expectedErrorMsg), "Unexpected error message text!");

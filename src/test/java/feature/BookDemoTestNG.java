@@ -64,7 +64,7 @@ public class BookDemoTestNG {
         Assert.assertTrue(emailInput.isDisplayed(), "Email field not displayed!");
         emailInput.sendKeys(email);
 
-        //Dien du lieu FirstName
+        //Dien du lieu FirstName.
         WebElement fnameInput = wait.until(
                 ExpectedConditions.visibilityOfElementLocated(By.id("FirstName"))
         );
